@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "start_game"
+msgstr "ゲーム開始"
+
+msgid "custom_level"
+msgstr "カスタムレベル"
+
+msgid "settings"
+msgstr "設定"
+
+msgid "about"
+msgstr "このアプリについて"
+
+msgid "exit"
+msgstr "終了"
+
+msgid "difficulty"
+msgstr "難易度選択"
+
+msgid "3x3"
+msgstr "3x3"
+
+msgid "4x4"
+msgstr "4x4"
+
+msgid "5x5"
+msgstr "5x5"
+
+msgid "custom"
+msgstr "カスタム"
+
+msgid "moves"
+msgstr "手数"
+
+msgid "time"
+msgstr "時間"
+
+msgid "menu"
+msgstr "メニュー"
+
+msgid "victory"
+msgstr "クリア！"
+
+msgid "theme"
+msgstr "カラーテーマ"
+
+msgid "music_volume"
+msgstr "音楽音量"
+
+msgid "sfx_volume"
+msgstr "効果音音量"
+
+msgid "light"
+msgstr "ライト"
+
+msgid "dark"
+msgstr "ダーク"
+
+msgid "nature"
+msgstr "ナチュラル"
+
+msgid "sunset"
+msgstr "サンセット"
+
+msgid "ember"
+msgstr "エンバー"
+
+msgid "midnight"
+msgstr "ミッドナイト"
+
+msgid "new_level"
+msgstr "新規レベル"
+
+msgid "level_name"
+msgstr "レベル名"
+
+msgid "delete_confirm"
+msgstr "このレベルを削除してもよろしいですか？"
+
+msgid "name_exists"
+msgstr "レベル名が既に存在します"
+
+msgid "no_levels"
+msgstr "レベルがありません"
+
+msgid "no_levels_hint"
+msgstr "+をクリックして作成"
+
+msgid "back_to_menu"
+msgstr "メインメニューに戻りますか？"
+
+msgid "save_level"
+msgstr "レベルを保存しますか？"
+
+msgid "exit_confirm"
+msgstr "ゲームを終了してもよろしいですか？"
+
+msgid "width"
+msgstr "幅"
+
+msgid "height"
+msgstr "高さ"
+
+msgid "about_text"
+msgstr "スライドパズルゲーム\nバージョン 1.0\n\nルール：タイルを移動して、小さい順に左から右、上から下の順に並べてください。\n\n遊び方：直接クリックするか、矢印キーまたはWASDキーを使用してください。\n\nアイコンはicons8より提供。"
+
+msgid "continue_game"
+msgstr "未完了のゲームが見つかりました\n続けますか？"
+
+msgid "export_success"
+msgstr "レベルデータをクリップボードにエクスポートしました"
+
+msgid "import_failed"
+msgstr "インポートに失敗しました。先にレベルデータをクリップボードにコピーしてください"

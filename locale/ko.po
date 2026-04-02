@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "start_game"
+msgstr "게임 시작"
+
+msgid "custom_level"
+msgstr "사용자 레벨"
+
+msgid "settings"
+msgstr "설정"
+
+msgid "about"
+msgstr "정보"
+
+msgid "exit"
+msgstr "종료"
+
+msgid "difficulty"
+msgstr "난이도 선택"
+
+msgid "3x3"
+msgstr "3x3"
+
+msgid "4x4"
+msgstr "4x4"
+
+msgid "5x5"
+msgstr "5x5"
+
+msgid "custom"
+msgstr "사용자"
+
+msgid "moves"
+msgstr "이동 횟수"
+
+msgid "time"
+msgstr "시간"
+
+msgid "menu"
+msgstr "메뉴"
+
+msgid "victory"
+msgstr "클리어!"
+
+msgid "theme"
+msgstr "색상 테마"
+
+msgid "music_volume"
+msgstr "음악 볼륨"
+
+msgid "sfx_volume"
+msgstr "효과음 볼륨"
+
+msgid "light"
+msgstr "라이트"
+
+msgid "dark"
+msgstr "다크"
+
+msgid "nature"
+msgstr "내추럴"
+
+msgid "sunset"
+msgstr "선셋"
+
+msgid "ember"
+msgstr "엠버"
+
+msgid "midnight"
+msgstr "미드나이트"
+
+msgid "new_level"
+msgstr "새 레벨"
+
+msgid "level_name"
+msgstr "레벨 이름"
+
+msgid "delete_confirm"
+msgstr "이 레벨을 삭제하시겠습니까?"
+
+msgid "name_exists"
+msgstr "레벨 이름이 이미 존재합니다"
+
+msgid "no_levels"
+msgstr "레벨이 없습니다"
+
+msgid "no_levels_hint"
+msgstr "+를 클릭하여 생성"
+
+msgid "back_to_menu"
+msgstr "메인 메뉴로 돌아가시겠습니까?"
+
+msgid "save_level"
+msgstr "레벨을 저장하시겠습니까?"
+
+msgid "exit_confirm"
+msgstr "게임을 종료하시겠습니까?"
+
+msgid "width"
+msgstr "너비"
+
+msgid "height"
+msgstr "높이"
+
+msgid "about_text"
+msgstr "슬라이드 퍼즐 게임\n버전 1.0\n\n규칙: 타일을 이동하여 작은 수부터 큰 수 순서로, 왼쪽에서 오른쪽, 위에서 아래로 배열하세요.\n\n플레이 방법: 직접 클릭하거나 방향키 또는 WASD 키를 사용하세요.\n\n아이콘 출처: icons8."
+
+msgid "continue_game"
+msgstr "미완성 게임이 발견되었습니다\n계속하시겠습니까?"
+
+msgid "export_success"
+msgstr "레벨 데이터가 클립보드로 내보내졌습니다"
+
+msgid "import_failed"
+msgstr "가져오기 실패. 먼저 레벨 데이터를 클립보드에 복사해 주세요"

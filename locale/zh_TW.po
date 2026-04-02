@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "start_game"
+msgstr "開始遊戲"
+
+msgid "custom_level"
+msgstr "自訂關卡"
+
+msgid "settings"
+msgstr "設定"
+
+msgid "about"
+msgstr "關於"
+
+msgid "exit"
+msgstr "退出"
+
+msgid "difficulty"
+msgstr "難度選擇"
+
+msgid "3x3"
+msgstr "3x3"
+
+msgid "4x4"
+msgstr "4x4"
+
+msgid "5x5"
+msgstr "5x5"
+
+msgid "custom"
+msgstr "自訂"
+
+msgid "moves"
+msgstr "步數"
+
+msgid "time"
+msgstr "時間"
+
+msgid "menu"
+msgstr "主選單"
+
+msgid "victory"
+msgstr "勝利！"
+
+msgid "theme"
+msgstr "顏色主題"
+
+msgid "music_volume"
+msgstr "音樂音量"
+
+msgid "sfx_volume"
+msgstr "音效音量"
+
+msgid "light"
+msgstr "亮色"
+
+msgid "dark"
+msgstr "暗色"
+
+msgid "nature"
+msgstr "自然"
+
+msgid "sunset"
+msgstr "日落"
+
+msgid "ember"
+msgstr "餘燼"
+
+msgid "midnight"
+msgstr "午夜"
+
+msgid "new_level"
+msgstr "新建關卡"
+
+msgid "level_name"
+msgstr "關卡名稱"
+
+msgid "delete_confirm"
+msgstr "確定要刪除這個關卡嗎？"
+
+msgid "name_exists"
+msgstr "關卡名稱已存在"
+
+msgid "no_levels"
+msgstr "暫無關卡"
+
+msgid "no_levels_hint"
+msgstr "點擊 + 建立"
+
+msgid "back_to_menu"
+msgstr "是否返回主選單？"
+
+msgid "save_level"
+msgstr "是否儲存關卡？"
+
+msgid "exit_confirm"
+msgstr "確定要退出遊戲嗎？"
+
+msgid "width"
+msgstr "寬度"
+
+msgid "height"
+msgstr "高度"
+
+msgid "about_text"
+msgstr "滑塊拼圖遊戲\n版本 1.0\n\n規則：移動棋子使它們按從小到大的順序排列，排列方式為從左到右、從上到下。\n\n玩法：直接點擊，或使用方向鍵、WASD鍵。\n\n圖標來自 icons8。"
+
+msgid "continue_game"
+msgstr "發現未完成的遊戲\n是否繼續？"
+
+msgid "export_success"
+msgstr "關卡資料已匯出至剪貼簿"
+
+msgid "import_failed"
+msgstr "匯入失敗，請先複製關卡資料到剪貼簿"
