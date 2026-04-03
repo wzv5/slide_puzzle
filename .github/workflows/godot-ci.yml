@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  GODOT_VERSION: 4.6.2
+  GODOT_VERSION: ${{ vars.GODOT_VERSION }}
   EXPORT_NAME: slide_puzzle
   PROJECT_PATH: .
 
@@ -13,7 +13,7 @@ jobs:
     name: Windows Export
     runs-on: ubuntu-24.04  # Use 24.04 with godot 4
     container:
-      image: barichello/godot-ci:4.6.2
+      image: barichello/godot-ci:${{ vars.GODOT_VERSION }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -42,7 +42,7 @@ jobs:
     name: Linux Export
     runs-on: ubuntu-24.04  # Use 24.04 with godot 4
     container:
-      image: barichello/godot-ci:4.6.2
+      image: barichello/godot-ci:${{ vars.GODOT_VERSION }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -69,7 +69,7 @@ jobs:
     name: Web Export
     runs-on: ubuntu-24.04  # Use 24.04 with godot 4
     container:
-      image: barichello/godot-ci:4.6.2
+      image: barichello/godot-ci:${{ vars.GODOT_VERSION }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -103,7 +103,7 @@ jobs:
     name: Mac Export
     runs-on: ubuntu-24.04  # Use 24.04 with godot 4
     container:
-      image: barichello/godot-ci:4.6.2
+      image: barichello/godot-ci:${{ vars.GODOT_VERSION }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -125,3 +125,40 @@ jobs:
         with:
           name: mac
           path: mac.zip
+
+  export-android:
+    name: Android Export
+    runs-on: ubuntu-24.04  # Use 24.04 with godot 4
+    container:
+      image: barichello/godot-ci:${{ vars.GODOT_VERSION }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Setup
+        run: |
+          mkdir -v -p ~/.local/share/godot/export_templates/
+          mv /root/.local/share/godot/export_templates/${GODOT_VERSION}.stable ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
+          mkdir -v -p ~/.config
+          mv /root/.config/godot ~/.config/godot
+      - name: Android Build
+        env:
+          # base64 release.keystore -w 0
+          # certutil -encodehex -f release.keystore encoded.txt 0x40000001
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          EXPORT_CFG_BASE64: ${{ secrets.EXPORT_CFG_BASE64 }}
+        run: |
+          echo $KEYSTORE_BASE64 | base64 --decode > /root/release.keystore
+          mkdir -v -p build/android
+          EXPORT_DIR="$(readlink -f build)"
+          cd $PROJECT_PATH
+          mkdir -v -p .godot
+          echo $EXPORT_CFG_BASE64 | base64 --decode > ./.godot/export_credentials.cfg
+          godot --headless --verbose --export-release "Android" "$EXPORT_DIR/android/$EXPORT_NAME.apk"
+          cp "$EXPORT_DIR/android/$EXPORT_NAME.apk" android.apk
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: android
+          path: android.apk
